@@ -49,7 +49,7 @@ public abstract class BaseActivity extends SupportActivity implements BaseView, 
     private TextView tvBack;
     private View lineHorizontal;
     @Inject
-    Lazy<AppManager> mAppManagerLazy;
+    public Lazy<AppManager> mAppManagerLazy;
 
     private DialogInterface.OnKeyListener onKeyListener =
             (dialog, keyCode, event) -> keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0;
